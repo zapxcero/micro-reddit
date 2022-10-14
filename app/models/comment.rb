@@ -1,6 +1,5 @@
 class Comment < ApplicationRecord
-  validates :commenter, :body, presence: true
-  validates :body, length: {min: 1}
+  validates :body, presence: true
   belongs_to :user
   belongs_to :post
 end
